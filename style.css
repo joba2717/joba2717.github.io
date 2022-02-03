@@ -1,0 +1,261 @@
+/* ====== FONTS ===== */
+p, h1, h2, h3, h4, h5, h6, blockquote, ul, table, figcaption, a, form, details, footer, dl, ol, button {
+    font-family: "Raleway", "Roboto", "Helvetica", "sans-serif";
+    font-weight: 100;
+    color: #222222;
+    text-align: center;
+}
+
+#contact-info {
+    font-size: 0.75em;
+    font-family: "Roboto", "Helvetica", "sans-serif";
+    color: darkgray;
+    line-height: 50%;
+}
+
+h3 {
+    line-height: 50%;
+}
+
+ul {
+    list-style: square;
+}
+
+blockquote, figcaption {
+    font-style: italic;
+}
+
+pre {
+    color: whitesmoke;
+}
+
+/* ===== STRUCTURE ===== */
+
+/* == Header/Navbar == */
+nav {
+    width: 100%;
+    text-align: center;
+}
+
+    nav > a {
+        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-decoration: none;
+    }
+
+    nav > a:hover:not(.active) {
+        text-decoration: underline;
+    }
+
+a.active {
+    font-weight: 700;
+}
+
+/* == Body == */
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+header.main {
+    padding-top: 4%;
+    padding-bottom: 2%;
+    background-color: whitesmoke;
+}
+
+    header.main > h1 {
+        text-align: center;
+        padding: 1em 0em 1em 0em;
+        margin: 0;
+        color: #222222;
+    }
+
+section {
+    position: relative;
+    padding-bottom: 7em;
+    background-color: whitesmoke;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+article {
+    display: block;
+    margin: 2em;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+article > button {
+    display: block;
+    width:10em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    text-decoration: underline;
+    text-align: center;
+    border: none;
+}
+
+    article.with_img > p {
+        column-count: 1;
+        column-fill: auto;
+    }
+
+
+    article.project {
+        display: none;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        border: solid 1px;
+        height: 90%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: fixed;
+        top: 2%;
+        z-index: 100;
+        overflow-y: scroll;
+        box-shadow: 0.5em 0.5em 0.5em grey;
+    }
+
+        article.project > p {
+            padding-left: 3em;
+            padding-right: 3em;
+            text-align: left;
+        }
+
+#img-slide {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+#p-controls {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+button.next-img {
+    width: 3%;
+    height: 3%;
+}
+
+button.prev-img {
+    width: 3%;
+    height: 3%;
+}
+
+    #img-slide > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: auto;
+        border-radius: 0;
+    }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* == Footer == */
+footer.main {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7em;
+}
+
+#footer-div {
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: darkgray;
+}
+
+    footer.main > p {
+        text-align: center;
+        color: darkgray;
+        letter-spacing: 0.1em;
+        margin: 0;
+        padding: 0.1em;
+    }
+
+#social-media-links {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+    #social-media-links > a {
+        margin-top: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        text-align: center;
+        display: inline-block;
+    }
+
+/* ===== SCROLLBAR (taken from W3) ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+
+
+/* ===================================================== DESKTOP ===================================================== */
+/* Only difference here is the fixed width for the section */
+@media screen and (min-width:768px) {
+    section {
+        background-color: whitesmoke;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 1000px;
+        /*overflow-y: scroll;
+        overflow-x: hidden;*/
+    }
+}
+
+/* ===================================================== MOBILE DEVICES ===================================================== */
+/*Not optimized. Just responsive */
+@media screen and (max-width:767px) {
+
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
