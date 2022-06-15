@@ -1,5 +1,5 @@
 /* ====== FONTS ===== */
-p, h1, h2, h3, h4, h5, h6, blockquote, ul, table, figcaption, a, form, details, footer, dl, ol, button {
+h1, h2, h3, h4, h5, h6, blockquote, ul, table, figcaption, a, form, details, footer, dl, ol, button {
     font-family: "Raleway", "Roboto", "Helvetica", "sans-serif";
     font-weight: 100;
     color: #222222;
@@ -15,6 +15,10 @@ p, h1, h2, h3, h4, h5, h6, blockquote, ul, table, figcaption, a, form, details, 
 
 h3 {
     line-height: 50%;
+}
+
+p {
+    font-family: "Open Sans", "Roboto", "Helvetica";
 }
 
 ul {
