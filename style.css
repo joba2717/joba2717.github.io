@@ -1,7 +1,7 @@
 /* ====== FONTS ===== */
 h1, h2, h3, h4, h5, h6, blockquote, ul, table, figcaption, a, form, details, footer, dl, ol, button {
     font-family: "Raleway", "Roboto", "Helvetica", "sans-serif";
-    font-weight: 100;
+    font-weight: 200;
     color: #222222;
     text-align: center;
 }
@@ -19,6 +19,8 @@ h3 {
 
 p {
     font-family: "Open Sans", "Roboto", "Helvetica";
+    text-align: center;
+    font-weight: 300;
 }
 
 ul {
