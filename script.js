@@ -1,3 +1,5 @@
+// TODO: Lots of work here... rewrite everything i guess?
+
 $(document).ready(function () {
     // Following are some quick jQuery functions to show/hide the "show me more" articles in the projects page
     $("#show-me-alumni").click(function () {
