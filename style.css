@@ -17,6 +17,11 @@ h3 {
     line-height: 50%;
 }
 
+h4 {
+    font-family: "Open Sans", "Roboto", "Helvetica";
+    font-weight: 400;
+}
+
 p {
     font-family: "Open Sans", "Roboto", "Helvetica";
     text-align: center;
@@ -68,7 +73,7 @@ body {
 }
 
 header.main {
-    padding-top: 4%;
+    padding-top: 2%;
     padding-bottom: 2%;
     background-color: whitesmoke;
 }
@@ -89,11 +94,23 @@ section {
     margin-right: 25%;
 }
 
+.spacer {
+    padding-top: 1em;
+}
+
 article {
     display: block;
-    margin: 2em;
+    margin: 0;
     background-color: whitesmoke;
-    border-radius: 5px;
+    border-radius: 0;
+}
+
+article > div{
+    margin-top: 0.5em;
+    display: inline-block;
+    text-align: center;
+    width:50%;
+    vertical-align: top;
 }
 
 article > button {
@@ -186,13 +203,13 @@ footer.main {
     bottom: 0;
     width: 100%;
     height: 7em;
+    background-image: url('resources/icons/background_footer.png');
 }
 
 #footer-div {
     width: 20em;
     margin-left: auto;
     margin-right: auto;
-    border-top: solid 1px;
     border-bottom: solid 1px;
     border-color: darkgray;
 }
@@ -247,7 +264,6 @@ footer.main {
         width: 600px;
         margin-left: auto;
         margin-right: auto;
-        max-height: 1000px;
         /*overflow-y: scroll;
         overflow-x: hidden;*/
     }
@@ -256,7 +272,22 @@ footer.main {
 /* ===================================================== MOBILE DEVICES ===================================================== */
 /*Not optimized. Just responsive */
 @media screen and (max-width:767px) {
+    a {
+        font-size: 0.8em;
+        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
+        text-decoration: none;
+    }
+    section {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
+    p {
+        font-size: 0.9em;
+    }
 }
 
 @media print {
