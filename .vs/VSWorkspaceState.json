@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\resources",
+    "\\resources\\icons"
   ],
-  "SelectedNode": "\\projects.html",
   "PreviewInSolutionExplorer": false
 }
