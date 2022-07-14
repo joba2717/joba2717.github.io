@@ -105,12 +105,17 @@ article {
     border-radius: 0;
 }
 
-article > div{
+article > div {
     margin-top: 0.5em;
     display: inline-block;
     text-align: center;
     width:50%;
     vertical-align: top;
+}
+
+div.hidden {
+    display: none;
+    width: 100%;
 }
 
 article > button {
@@ -151,6 +156,7 @@ article > button {
             padding-right: 3em;
             text-align: left;
         }
+ 
 
 #img-slide {
     display: block;

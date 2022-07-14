@@ -2,9 +2,29 @@
 
 $(document).ready(function () {
     // Following are some quick jQuery functions to show/hide the "show me more" articles in the projects page
+    $("#show-me-dgp").click(function () {
+        $("#hidden-1st").show();
+        $("#show-less-dgp").show();
+        $("#show-me-dgp").hide();
+    });
+    $("#show-less-dgp").click(function () {
+        $("#hidden-1st").hide();
+        $("#show-me-dgp").show();
+        $("#show-less-dgp").hide();
+    });  
+
     $("#show-me-alumni").click(function () {
-        $("#project-alumni").fadeIn("slow");
-    });    
+        $("#hidden-2nd").show();
+        $("#show-less-alumni").show();
+        $("#show-me-alumni").hide();
+    });
+    $("#show-less-alumni").click(function () {
+        $("#hidden-2nd").hide();
+        $("#show-me-alumni").show();
+        $("#show-less-alumni").hide();
+    }); 
+
+
     $("#show-me-SQ").click(function () {
         $("#project-SQ").fadeIn("slow");
     });    
@@ -14,13 +34,21 @@ $(document).ready(function () {
     $("#closeSQ").click(function () {
         $("#project-SQ").hide();
     });
+
     // Change cursor over the "Show me more" buttons to indicate they are clickable
+    $("#show-me-dgp").hover(function () {
+        $("#show-me-dgp").css("cursor", "pointer");
+    });
     $("#show-me-alumni").hover(function () {
         $("#show-me-alumni").css("cursor", "pointer");
     });
-    $("#show-me-SQ").hover(function () {
-        $("#show-me-SQ").css("cursor", "pointer");
-    }); 
+    $("#show-less-dgp").hover(function () {
+        $("#show-less-dgp").css("cursor", "pointer");
+    });
+    $("#show-less-alumni").hover(function () {
+        $("#show-less-alumni").css("cursor", "pointer");
+    });
+    
 
 });
 
